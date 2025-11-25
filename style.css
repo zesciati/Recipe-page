@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+
+:root{
+  
+  /* color */
+  --white:oklch(1 0 0);
+  --Stone-100: oklch(0.9307 0.0238 67.53);
+  --Stone-150: oklch(0.9032 0.0104 67.69);
+  --Stone-600: oklch(0.4613 0.0178 67.36);
+  --Stone-900: oklch(0.3012 0.0052 56.2);
+  --Brown-800: oklch(0.4671 0.09203 37.7057);
+  --Rose-800:  oklch(0.4141 0.1222 354.94);
+  --Rose-50:  oklch(0.9789 0.0128 345.48);
+
+  /* spacing */
+  --space-3xs: clamp(0.1875rem, 0.1435rem + 0.1878vw, 0.3125rem);
+  --space-2xs: clamp(0.375rem, 0.287rem + 0.3756vw, 0.625rem);
+  --space-xs: clamp(0.5625rem, 0.4305rem + 0.5634vw, 0.9375rem);
+  --space-s: clamp(0.75rem, 0.5739rem + 0.7512vw, 1.25rem);
+  --space-m: clamp(1.125rem, 0.8609rem + 1.1268vw, 1.875rem);
+  --space-l: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+  --space-xl: clamp(2.25rem, 1.7218rem + 2.2535vw, 3.75rem);
+  --space-2xl: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
+  --space-3xl: clamp(4.5rem, 3.4437rem + 4.507vw, 7.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.1875rem, 0.0335rem + 0.6573vw, 0.625rem);
+  --space-2xs-xs: clamp(0.375rem, 0.1769rem + 0.8451vw, 0.9375rem);
+  --space-xs-s: clamp(0.5625rem, 0.3204rem + 1.0329vw, 1.25rem);
+  --space-s-m: clamp(0.75rem, 0.3539rem + 1.6901vw, 1.875rem);
+  --space-m-l: clamp(1.125rem, 0.6408rem + 2.0657vw, 2.5rem);
+  --space-l-xl: clamp(1.5rem, 0.7077rem + 3.3803vw, 3.75rem);
+  --space-xl-2xl: clamp(2.25rem, 1.2817rem + 4.1315vw, 5rem);
+  --space-2xl-3xl: clamp(3rem, 1.4155rem + 6.7606vw, 7.5rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(0.75rem, 0.1338rem + 2.6291vw, 2.5rem);
+
+/* font 14px-20px */
+  --step--2: clamp(0.5208rem, 0.4225rem + 0.4194vw, 0.8rem);
+  --step--1: clamp(0.625rem, 0.493rem + 0.5634vw, 1rem);
+  --step-0: clamp(0.75rem, 0.5739rem + 0.7512vw, 1.25rem);
+  --step-1: clamp(0.9rem, 0.6667rem + 0.9953vw, 1.5625rem);
+  --step-2: clamp(1.08rem, 0.7726rem + 1.3117vw, 1.9531rem);
+  --step-3: clamp(1.296rem, 0.8927rem + 1.7208vw, 2.4414rem);
+  --step-4: clamp(1.5552rem, 1.0282rem + 2.2483vw, 3.0518rem);
+  --step-5: clamp(1.8662rem, 1.1802rem + 2.9273vw, 3.8147rem);
+
+  --font-youngserif: "Young Serif", serif;
+  --font-outfit: "Outfit", sans-serif;
+}
