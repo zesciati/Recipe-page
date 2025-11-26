@@ -95,6 +95,7 @@ main h1 {
   font-weight: 400;
   font-size: var(--step-3-larger);
   margin-bottom: var(--space-l);
+  text-transform: capitalize;
 }
 
 main p {
@@ -118,13 +119,21 @@ main p {
 
 .preparation-time ul {
   padding: var(--space-m);
-
+  max-width: 90%;  
 }
 .preparation-time ul li {
   font-family: var(--font-outfit);
+  /* memberikan jarak antara li bullet dan text */
+  padding-left: 1rem;
+  color: var(--Rose-800);
+  margin-left: .45rem;
+}
 
+.preparation-time ul .preps{
+  margin-block: var(--space-xs);
 }
 
 .preparation-time span {
   font-weight: 600;
+  color: var(--Stone-900);
 }
