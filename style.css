@@ -76,6 +76,10 @@ html {
 
 }
 
+body{
+  background-color: var(--white);
+}
+
 
 header img {
   max-inline-size: 100%;
@@ -103,6 +107,7 @@ main p {
   line-height: var(--lineheight);
   color: var(--Stone-600);
   margin-bottom: var(--space-l);
+  font-size: var(--step-2);
 
 }
 
@@ -134,14 +139,20 @@ main p {
   margin-block: var(--space-xs);
 }
 
-.preparation-time span {
+.preparation-time span, .instructions span {
   font-weight: 600;
   color: var(--Stone-900);
   font-size: var(--step-2);
 
 }
 
-.ingredients h1{
+
+
+.ingredients{
+  margin-bottom: 2rem;
+}
+
+.ingredients h1, .instructions h1{
   font-family: var(--font-youngserif);
   font-weight: 400;
   font-size: var(--step-2-larger);
@@ -158,9 +169,22 @@ main p {
   font-family: var(--font-outfit);
   padding-left: 1rem;
   color: var(--Brown-800);
-
+  font-size: var(--step-2);
 }
 
 .ingredients ul li span{
   color: var(--Stone-600);
+}
+
+.instructions ol {
+  padding-inline: var(--space-m);
+
+}
+.instructions ol li {
+  font-family: var(--font-outfit);
+  margin-bottom: var(--space-m);
+  font-size: var(--step-2);
+  padding-left: 1rem;
+  color: var(--Brown-800);
+  font-weight: 600;
 }
