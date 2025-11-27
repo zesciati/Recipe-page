@@ -76,7 +76,7 @@ html {
 
 }
 
-body{
+body {
   background-color: var(--white);
 }
 
@@ -124,8 +124,9 @@ main p {
 
 .preparation-time ul {
   padding: var(--space-m);
-  max-width: 90%;  
+  max-width: 90%;
 }
+
 .preparation-time ul li {
   font-family: var(--font-outfit);
   /* memberikan jarak antara li bullet dan text */
@@ -135,24 +136,25 @@ main p {
   font-size: var(--step-2);
 }
 
-.preparation-time ul .preps{
+.preparation-time ul .preps {
   margin-block: var(--space-xs);
 }
 
-.preparation-time span, .instructions span {
+.preparation-time span,
+.instructions span {
   font-weight: 600;
   color: var(--Stone-900);
   font-size: var(--step-2);
 
 }
 
-
-
-.ingredients{
+.ingredients {
   margin-bottom: 2rem;
 }
 
-.ingredients h1, .instructions h1{
+.ingredients h1,
+.instructions h1,
+.nutrition h1 {
   font-family: var(--font-youngserif);
   font-weight: 400;
   font-size: var(--step-2-larger);
@@ -164,7 +166,7 @@ main p {
   padding-inline: var(--space-m);
 }
 
-.ingredients ul li{
+.ingredients ul li {
   margin-bottom: var(--space-s);
   font-family: var(--font-outfit);
   padding-left: 1rem;
@@ -172,14 +174,19 @@ main p {
   font-size: var(--step-2);
 }
 
-.ingredients ul li span{
+.ingredients ul li span {
   color: var(--Stone-600);
+}
+
+.instructions {
+  margin-bottom: 2rem;
 }
 
 .instructions ol {
   padding-inline: var(--space-m);
 
 }
+
 .instructions ol li {
   font-family: var(--font-outfit);
   margin-bottom: var(--space-m);
@@ -187,4 +194,77 @@ main p {
   padding-left: 1rem;
   color: var(--Brown-800);
   font-weight: 600;
+}
+
+.nutrition p {
+  font-family: var(--font-outfit);
+  line-height: var(--lineheight);
+  color: var(--Stone-600);
+  font-size: var(--step-2);
+}
+
+.table-nutrition {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+  grid-template-areas:
+    "calories kcal"
+    "carbs carbsgram"
+    "protein proteingram"
+    "fat fatgram";
+  /* place-items: center; */
+  margin-right: var(--space-xl);
+}
+
+.table-nutrition p {
+  width: 120%;
+  /* padding: .2rem 0; */
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000; /* black line */
+  font-size: var(--step-2);
+  font-weight: 400;
+  font-family: var(--font-outfit);
+  /* memberikan jarak dalam grid */
+  text-indent: 20%;
+}
+
+.calories {
+  grid-area: calories;
+}
+
+.carbs {
+  grid-area: carbs;
+}
+
+.protein {
+  grid-area: protein;
+}
+
+.fat {
+  grid-area: fat;
+}
+
+.kcal {
+  grid-area: kcal;
+}
+
+.carbsgram {
+  grid-area: carbsgram;
+}
+
+.proteingram {
+  grid-area: proteingram;
+}
+
+.fatgram {
+  grid-area: fatgram;
+}
+
+.table-nutrition .kcal,
+.table-nutrition .carbsgram,
+.table-nutrition .proteingram,
+.table-nutrition .fatgram {
+  color: var(--Brown-800);
+  font-size: var(--step-2);
+  font-weight: 600;
+  font-family: var(--font-outfit);
 }
