@@ -268,3 +268,43 @@ main p {
   font-weight: 600;
   font-family: var(--font-outfit);
 }
+
+@media (min-width: 640px) {
+  body{
+    background: var(--Stone-100);
+    padding: var(--space-xl);
+  }
+
+  header, main{
+    background-color: var(--white);
+    padding: var(--space-m);
+  }
+
+  header{
+    border-radius: 10px 10px 0 0 ;
+  }
+
+  main{
+    border-radius: 0 0 10px 10px ;
+  }
+  
+}
+
+@media (min-width: 748px){
+  body{
+    padding-inline:7rem ;
+  }
+}
+
+
+@media (min-width: 1023px) {
+  body{
+    padding-inline:15rem ;
+  }
+}
+
+@media (min-width: 1279px) {
+  body{
+    padding-inline:25rem ;
+  }
+}
