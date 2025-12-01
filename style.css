@@ -219,7 +219,8 @@ main p {
   width: 120%;
   /* padding: .2rem 0; */
   padding-bottom: 1rem;
-  border-bottom: 1px solid #000; /* black line */
+  border-bottom: 1px solid #000;
+  /* black line */
   font-size: var(--step-2);
   font-weight: 400;
   font-family: var(--font-outfit);
@@ -270,41 +271,160 @@ main p {
 }
 
 @media (min-width: 640px) {
-  body{
+  body {
     background: var(--Stone-100);
     padding: var(--space-xl);
   }
 
-  header, main{
+  header,
+  main {
     background-color: var(--white);
     padding: var(--space-m);
   }
 
-  header{
-    border-radius: 10px 10px 0 0 ;
+  header {
+    border-radius: 10px 10px 0 0;
   }
 
-  main{
-    border-radius: 0 0 10px 10px ;
+  main {
+    border-radius: 0 0 10px 10px;
   }
-  
+
 }
 
-@media (min-width: 748px){
-  body{
-    padding-inline:7rem ;
+@media (min-width: 748px) {
+  body {
+    padding-inline: 7rem;
   }
+
+  main h1 {
+    font-size: var(--step-2-larger);
+  }
+
+  main p,
+  .preparation-time ul li,
+  .preparation-time span,
+  .instructions span,
+  .ingredients ul li,
+  .instructions ol li,
+  .nutrition p,
+  .table-nutrition .kcal,
+  .table-nutrition .carbsgram,
+  .table- nutrition .proteingram,
+  .table-nutrition .fatgram {
+    font-size: var(--step-1);
+  }
+
+  .preparation-time h3 {
+    font-size: var(--step-0-larger);
+  }
+
+  .ingredients h1,
+  .instructions h1,
+  .nutrition h1 {
+    font-size: var(--step-1-larger);
+  }
+
+  .table-nutrition .kcal,
+  .table-nutrition .carbsgram,
+  .table-nutrition .proteingram,
+  .table-nutrition .fatgram {
+    font-size: var(--step-1);
+  }
+
 }
 
 
 @media (min-width: 1023px) {
-  body{
-    padding-inline:15rem ;
+  body {
+    padding-inline: 15rem;
   }
+
+
 }
 
 @media (min-width: 1279px) {
-  body{
-    padding-inline:25rem ;
+  body {
+    padding-inline: 25rem;
+  }
+
+  main h1 {
+    font-size: var(--step-1-larger);
+  }
+
+  main p,
+  .preparation-time ul li,
+  .preparation-time span,
+  .instructions span,
+  .ingredients ul li,
+  .instructions ol li,
+  .nutrition p,
+  .table-nutrition .kcal,
+  .table-nutrition .carbsgram,
+  .table- nutrition .proteingram,
+  .table-nutrition .fatgram {
+    font-size: var(--step-0);
+  }
+
+  .preparation-time h3 {
+    font-size: var(--step--1-larger);
+  }
+
+  .ingredients h1,
+  .instructions h1,
+  .nutrition h1 {
+    font-size: var(--step-0-larger);
+  }
+
+  .table-nutrition .kcal,
+  .table-nutrition .carbsgram,
+  .table-nutrition .proteingram,
+  .table-nutrition .fatgram {
+    font-size: var(--step-0);
+  }
+
+  @media (min-width: 2126px) {
+    .desktop-size {
+      padding-inline: 23rem;
+    }
+
+    .table-nutrition p {
+      max-width: 100%;
+    }
+
+    main h1 {
+      font-size: var(--step-3-larger);
+    }
+
+    main p,
+    .preparation-time ul li,
+    .preparation-time span,
+    .instructions span,
+    .ingredients ul li,
+    .instructions ol li,
+    .nutrition p,
+    .table-nutrition .kcal,
+    .table-nutrition .carbsgram,
+    .table- nutrition .proteingram,
+    .table-nutrition .fatgram {
+      font-size: var(--step-2);
+    }
+
+    .preparation-time h3 {
+      font-size: var(--step-1-larger);
+    }
+
+    .ingredients h1,
+    .instructions h1,
+    .nutrition h1 {
+      font-size: var(--step-2-larger);
+    }
+
+    .table-nutrition .kcal,
+    .table-nutrition .carbsgram,
+    .table-nutrition .proteingram,
+    .table-nutrition .fatgram {
+      font-size: var(--step-2);
+    }
   }
 }
